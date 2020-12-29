@@ -1,0 +1,522 @@
+/*fuentes personalizadas*/
+@font-face{
+    font-family: "TrebuchetMS";
+    src: url("./fonts/TrebuchetMS.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "BebasNeue";
+    src: url("./fonts/BebasNeue.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src:url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/pattern.png");
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    background: #000;
+    font-family:"BebasNeue";
+}
+.wrapper{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+}
+.wrapper .logo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    /*transition: all 0.5s;*/
+}
+/*.logo:hover{
+    border-radius: 10px;
+    background:#74221c;
+}*/
+
+.wrapper .logo a{
+    text-decoration: none;
+    color: #fff;
+} 
+.gear{
+    font-family: 'WebSymbolsRegular';
+    margin-right: 10px;
+    font-size: 1.5em;
+    /*animation: moveGear 2s infinite linear;*/
+    
+}
+/*.logo:hover a{
+    animation: moveTextRight 0.5s linear;
+}
+.logo:hover .gear{
+    animation: moveGearOut 0.5s linear;
+    
+}*/
+.wrapper #menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    list-style: none;
+}
+.wrapper #menu ul li{
+    margin-left: 40px;
+}
+.wrapper #menu ul li a{
+    font-size: 1.3em;
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+.banner{
+    display: flex;
+    background: url("../img/bakbaner.png");
+    background-position: center;
+    height: 80px;
+    color: #fff;
+    font-size: 2em;
+    font-family: "BebasNeue";
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+
+}
+.categories{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 40px;
+}
+.category{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    background:#fff;
+    gap: 40px;
+    font-family: "TrebuchetMS";
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 5px;
+}
+.category span{
+    font-family: 'WebSymbolsRegular';
+    font-size: 2em;
+}
+.category p{
+    text-align: center;
+}
+.category h3{
+    text-align: center;
+}
+.central{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 100px;
+    min-height: 300px;
+    
+    gap:40px
+}
+.lastArticles{
+    grid-column: 2/5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.central > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/5;
+    height: 80px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color:rgb(38, 110, 204);
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: "BebasNeue";
+    text-decoration: none;
+} 
+.lastArticles > h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background: #ccc;
+    font-size: 2em;
+    font-family: "BebasNeue";
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 2px 2px 2px rgb(112, 110, 110)
+}
+.lastArticles .arts{
+    width: 100%;
+    min-height: 120px;
+    background: #fff;
+    box-shadow: -1px 2px 2px 1px rgb(179, 176, 176);
+    font-family: "TrebuchetMS";
+}
+.arts > *{
+    padding: 10px;
+}
+.lastArticles .arts > h2{
+    color:rgb(38, 110, 204);
+    margin:5px;
+    
+}
+#sidebar,#sidebar-movil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+#sidebar-movil{
+    margin-top:20%;
+}
+#sidebar > h3,.login > h3{
+    width: 100%;
+    height: 30px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgb(112, 110, 110);
+    font-family: "BebasNeue";
+    text-transform: uppercase;
+    padding: 5px;
+}
+.buscar a{
+    color:rgb(139, 139, 139);
+    text-decoration: none;
+    font-family: 'WebSymbolsRegular';
+    padding: 4.5px 1px;
+    margin-left: -25px;
+    border-left: 1px solid rgb(139, 139, 139);
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background: #fff;
+    min-height: 200px;
+    gap:20px;
+    margin-top: 10px;
+}
+
+.regis{
+    width: 85%;
+    
+}
+.regis p{
+    text-align: left;
+    margin-bottom: 5px;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    gap:20px
+}
+.botones input{
+    width: 85%;
+    padding: 7px;
+}
+input[type=text]{
+    width: 90%;
+    padding: 5px 0px;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    background: #fff;
+    height: 200px;
+    font-family: 'WebSymbolsRegular';
+    font-size: 1.5em;
+}
+.redes p{
+    margin-left: 20px;
+}
+.colaboradores{
+    width: 80%;
+    background: #fff;
+    height: 200px;
+}
+footer{
+    
+    
+    margin-top: 30px;
+    width: 100%;
+    min-height: 400px;
+    background: #000;
+    
+}
+.pie{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:60px;
+    margin: 0px auto;
+    width: 95%;
+    min-height: 350px;
+   
+}   
+.pie>div{
+    
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.pie > div h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-size: 1.8em;
+    font-family: "BebasNeue";
+    background: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.menu ul{
+    width: 92%;
+    margin: 0px auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.menu ul li{
+    padding: 10px 0px;
+    border-bottom:1px solid #ccc;
+    
+}
+.menu ul li::before{
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    color:#fff
+}
+.menu li a{
+    color: rgb(100, 156, 240);
+    font-family: "arial";
+    text-decoration: none;
+}
+.lenguages img{
+    display: block;
+    margin: 20px auto;
+}
+.lenguages ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+.lenguages ul li img{
+    width: 100%;
+}
+.lenguages p{
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.mapa iframe{
+    width: 99.2%;
+    height: 340px;
+    margin-top: 10px;
+}
+.boton{
+    display: none;
+}
+.login-movil{
+    display: none;
+}
+@media (max-width:970px){
+
+    .wrapper{
+        gap: 200px;
+    }
+    .banner{
+        font-size: 1.6em;
+    }
+    .categories{
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .lastArticles,#sidebar,.central>a{
+        grid-column: 1/5;
+        
+    }
+    .pie > div h3{
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+}
+  
+@media (max-width:767px){
+    header{
+        min-height: 110px;
+        
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap:10px;
+    }
+    .wrapper .logo{
+        min-height: 40px;
+        margin-top: 30px;
+    }
+    .banner{
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+    .pie{
+        
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:486px){
+    
+    
+    header{
+        min-height: auto;
+        min-width: auto;
+        padding: 0px !important;
+        margin: 0px !important;
+        
+    }  
+    .wrapper{
+        gap:0px;
+        min-height: auto;
+        
+    }
+    #menu{
+        display:none;
+        background: rgba(0, 0, 0,0.8);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        
+    }
+    .wrapper .logo{
+        
+        min-height: 50px;
+        min-width: 100%;
+        margin-top: 0px;
+        padding: 15px 0px;
+        
+        
+    }
+    .gear{
+        margin-left: 10px;
+    }
+    
+    .wrapper nav ul{
+        
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        
+    }
+    .boton{
+        display: inline-block;
+        width: 10%;
+        margin-left: auto;
+        margin-right:10px ;
+    }
+    .boton img{
+        width: 100%;
+    }
+    .wrapper nav ul li{
+        
+        margin-left: 0px !important; 
+        
+    }
+    .banner{
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
+        margin-top: 20px;
+    }
+    .categories{
+        grid-template-columns: repeat(1,1fr); 
+        
+    }
+    .category{
+        height: 150px;
+        gap: 10px;
+    }
+    #sidebar{
+        display: none;
+    }
+    .login-movil{
+        display: block;
+    }
+
+}
+/*Animaciones*/
+@keyframes moveGear{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes moveGearOut{
+    0%{
+        transform: translateY(0%);
+        
+    }
+    50%{
+        transform: translateY(200%);
+        
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
+}
+@keyframes moveTextRight{
+    0%{
+        transform: translateX(0%);
+        
+    }
+    50%{
+        transform: translateX(200%);
+        
+    }
+    100%{
+        transform: translateX(0%);
+        
+    }
+}
