@@ -94,7 +94,7 @@ header{
 .banner{
     display: flex;
     background: url("../img/bakbaner.png");
-    background-position: center;
+    background-position: -200px -200px;
     height: 80px;
     color: #fff;
     font-size: 2em;
@@ -103,7 +103,18 @@ header{
     align-items: center;
     justify-content: center;
     letter-spacing: 5px;
+    overflow: hidden;
+    animation: backBanner 10s linear;
+}
 
+@keyframes backBanner{
+    
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -200px -200px;
+    }
 }
 .categories{
     margin-top: 40px;
@@ -474,6 +485,10 @@ footer{
     .category{
         height: 150px;
         gap: 10px;
+    }
+    .category span{
+        
+        font-size: 1.5em;
     }
     #sidebar{
         display: none;
