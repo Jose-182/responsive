@@ -47,12 +47,9 @@ header{
     width: 150px;
     background-color: cornflowerblue;
     padding: 10px;
-    /*transition: all 0.5s;*/
+    
 }
-/*.logo:hover{
-    border-radius: 10px;
-    background:#74221c;
-}*/
+
 
 .wrapper .logo a{
     text-decoration: none;
@@ -62,16 +59,10 @@ header{
     font-family: 'WebSymbolsRegular';
     margin-right: 10px;
     font-size: 1.5em;
-    /*animation: moveGear 2s infinite linear;*/
+    
     
 }
-/*.logo:hover a{
-    animation: moveTextRight 0.5s linear;
-}
-.logo:hover .gear{
-    animation: moveGearOut 0.5s linear;
-    
-}*/
+
 .wrapper #menu ul{
     display: flex;
     align-items: center;
@@ -497,41 +488,4 @@ footer{
         display: block;
     }
 
-}
-/*Animaciones*/
-@keyframes moveGear{
-    from{
-        transform: rotateZ(0deg);
-    }
-    to{
-        transform: rotateZ(360deg);
-    }
-}
-@keyframes moveGearOut{
-    0%{
-        transform: translateY(0%);
-        
-    }
-    50%{
-        transform: translateY(200%);
-        
-    }
-    100%{
-        transform: translateY(0%);
-        
-    }
-}
-@keyframes moveTextRight{
-    0%{
-        transform: translateX(0%);
-        
-    }
-    50%{
-        transform: translateX(200%);
-        
-    }
-    100%{
-        transform: translateX(0%);
-        
-    }
 }
